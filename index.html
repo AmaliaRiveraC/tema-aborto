@@ -3,17 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tema Aborto</title>
+  <title>yoDecido</title>
   <meta name="viewport" content="device-width initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/common.css">
+  <link rel="shorcut icon" type="image/x-icon" href="assets/logocorto.png">
+   <script src="http://code.jquery.com/jquery-3.2.1.js"
+ integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+ crossorigin="anonymous"></script>
 </head>
 
 <body>
   <section class="contenedor">
     <header class="encabezado">
       <div class="logo">
-        <img src="assets/logo.png" alt="">
+        <img src="assets/logocorto.png" alt="">
       </div>
       <nav>
           <a class="iconosNav" href="#cuerpo"><img src="assets/micuerpo.png" alt="">Mycuerpo</a>
@@ -21,17 +25,16 @@
           <a class="iconosNav" href="#alternativas"><img src="assets/alternativas.png" alt="">Alternativas</a>
       </nav>
     </header>
-    <section class="slader">
-        <div>
-          <img src="assets/micuerpo.gif">
+    <section class="slide">
+      <div>
+        <div class="carrucel">
+
         </div>
-        <div>
-          <img src="assets/prevencion.gif">
-        </div>  
-        <div>
-          <img src="assets/alternativas.gif"> 
-        </div>
-      </section>
+        <img src="assets/micuerpo.gif" class="img1">
+        <img src="assets/prevencion.gif" class="img2">
+        <img src="assets/alternativas.gif" class="img3">
+      </div>
+    </section>
     <section class="seccion1" id="cuerpo">
       <h1>Mi cuerpo</h1>
       <section class="botones">
@@ -139,10 +142,10 @@
         </section>
       </section>
     </section> -->
-    
+
       <section class="seccion3">
         <h3>yoDecido</h3>
-        <section>
+        <section >
           <img src="assets/tenerlo.png" href="">
           <p>Existen varias organizaciones sin costo que pueden ayudarte en el proceso de tener tu bebé de la forma más digna. Una de ellas es Vifac que sin ningún costo alberga mujeres en estado de vulnerabilidad durante el embarazo.</p>
           <p id="pregunta-1">¿Cuándo debo pedir cita con el médico?</p>
@@ -176,7 +179,7 @@
         <section>
           <img src="assets/adopcion.png" href="">
           <p id="pregunta">¿Dar en adopción es lo indicado para mí?</p>
-          <p id="res">Cada uno tiene sus razones únicas y válidas para decidir dar en adopción. 
+          <p id="res">Cada uno tiene sus razones únicas y válidas para decidir dar en adopción.
 
             La elección es tuya. Hay muchas familias en todo el país con la esperanza de construir una familia por medio de la adopción. En todos los estados existen leyes que guían a las familias que adoptan y te protegen a ti
           </p>
@@ -258,18 +261,18 @@
     <section>
 		<h2 align="center">¡Yo te cuento!</h2>
 	</section>
-	
+
 	<h3>Comentarios</h3>
-		
-	
+
+
 			<ul>
 				<li type="none"  id="comentariosPublicados">
 					<div name="comentariosPublicados" id="nuevosComentarios" style="border: 1px color: black"><hr width="800"  align="left"></div>
-				
+
 				</li>
-			
+
 			</ul>
-		
+
 	<form>
 		<h3>Comentar</h3>
 		<input type="button" value="Texto Grande" onclick="letraGrande()">
@@ -281,7 +284,7 @@
 		<input type="button" value="Centrar" onclick="centrar()">
 		<input type="button" value="Alinear Derecha" onclick="alinearDerecha()">
 		<div>
-			
+
 			<textarea name="ingresarComentario" id="ingresarComentario" placeholder="Escribe aquí tu artículo" value="comentario" oninput="duplicar()" style="width: 787px; height: 150px"></textarea>
 		</div>
 	</form>
@@ -293,7 +296,7 @@
 		<input type="submit" value="Enviar" onclick="publicarComentario();">
 	</div>
     <footer>
-      
+
     </footer>
   </section>
   <script src="js/app.js" charset="utf-8"></script>
