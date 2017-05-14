@@ -1,31 +1,103 @@
-
-.contenedor{
+.contenedor {
   display: flex;
   width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.encabezado{
+
+.encabezado {
   display: flex;
   width: 100%;
   justify-content: flex-end;
   background-color: red;
-
   position: fixed;
   top: 1%;
 }
-.encabezado nav{
+
+.encabezado nav {
   display: flex;
   width: 40%;
   justify-content: space-between;
   background-color: pink;
-  padding:1%;
+  padding: 1%;
   margin: 1%;
 }
-.encabezado nav a{
-  display:flex;
+
+.encabezado nav a {
+  display: flex;
   justify-content: space-between;
 }
-.seccion1{
-  background-color: green;
+
+.seccion1 {
+  margin-top: 5%;
 }
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.botones img {
+  display: flex;
+  width: 20%;
+  border: 2px solid;
+  border-color: red;
+  margin: 2%;
+}
+
+.seccion1 h1, h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.seccion1, .seccion2, .seccion3, .seccion4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+}
+
+.seccion1 h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.partes {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.imagen {
+  display: inline-flex;
+  width: 50%;
+
+}
+img{
+  display: inline-flex;
+  width: 100%;
+  margin: 1%;
+}
+
+.texto {
+  display: inline-flex;
+  width: 50%;
+  margin: 1%;
+  flex-direction: column;
+}
+.femenino{
+  display: none;
+}
+.masculino{
+  display: none;
+}
+.fecundacion{
+  display: none;
+}
+.
