@@ -3,9 +3,10 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 5%;
+  background-color: #56074B;
 }
 
 .encabezado {
@@ -13,7 +14,7 @@
   width: 100%;
   justify-content: flex-end;
   flex-direction: row;
-  background-color: red;
+  background-color: #70D4B4;
   position: fixed;
   top: 1%;
 }
@@ -27,9 +28,9 @@
   }
 .logo{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-self: center;
-
+  padding-left: 3%;
 }
 .logo img{
   display: flex;
@@ -55,8 +56,12 @@
   height: 49%;
 }
 
+/* Seccion Mi cuerpo*/
+
 .seccion1 {
   margin-top: 5%;
+  background-color: #f25e36;
+  color: #FFF;
 }
 
 .botones {
@@ -95,7 +100,7 @@ transition: transform ease .3s;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  width: 90%;
+  width: 100%;
   align-items: center;
 }
 
