@@ -7,10 +7,13 @@
   <meta name="viewport" content="device-width initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="shorcut icon" type="image/x-icon" href="assets/logocorto.png">
+
+   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+
    <script src="http://code.jquery.com/jquery-3.2.1.js"
  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
  crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -20,15 +23,15 @@
         <img src="assets/logocorto.png" alt="">
       </div>
       <nav>
-          <a class="iconosNav" href="#cuerpo"><img src="assets/micuerpo.png" alt="">Mycuerpo</a>
+          <a class="iconosNav" href="#cuerpo"><img src="assets/micuerpo.png" alt="">Mi cuerpo</a>
           <a class="iconosNav" href="#prevencion"><img src="assets/prevencion.png" alt="">Prevención</a>
           <a class="iconosNav" href="#alternativas"><img src="assets/alternativas.png" alt="">Alternativas</a>
       </nav>
     </header>
+
     <section class="slide">
       <div>
         <div class="carrucel">
-
         </div>
         <img src="assets/micuerpo.gif" class="img1">
         <img src="assets/prevencion.gif" class="img2">
@@ -38,10 +41,10 @@
     <section class="seccion1" id="cuerpo">
       <h1>Mi cuerpo</h1>
       <section class="botones">
-        <img id="imagen1" src="assets/femenino.png">
-        <img id="imagen2" src="assets/masculino.png">
-        <img id="imagen3" src="assets/femenino.png">
-        <img id="imagen4" src="assets/masculino.png">
+        <img id="imagen1" src="assets/femenino2.png">
+        <img id="imagen2" src="assets/masculino2.png">
+        <img id="imagen3" src="assets/fecundacion.png">
+        <img id="imagen4" src="assets/ets.png">
       </section>
       <!-- mi_cuerpo-->
       <div id="femenino">
@@ -54,8 +57,8 @@
                 la parte superior, y donde ambos se unen, se encuentra el <strong>clítoris</strong>, que es la parte más sensible al placer de la mujer. <br>Más abajo, en el centro de la vulva, está el <strong>meato urinario o abertura uretral</strong>,
                 que es por donde se expulsa la orina. Debajo de ésta se encuentra el <strong>orificio vaginal</strong>.</p>
             </div>
-            <div class="imgen">
-              <img src="assets/imagen1.jpg" alt="">
+            <div class="imagen">
+              <img src="assets/aparatofem.png" alt="">
             </div>
           </div>
         </div>
@@ -65,7 +68,7 @@
           <h3>Aparato genital interno</h3>
           <div class="partes">
             <div class="imagen">
-              <img src="assets/imagen2.jpg" alt="">
+              <img src="assets/aparatofem.png" alt="">
             </div>
             <div class="texto">
               <p>El aparato genital interno de la mujer está compuesto por la vagina, el útero o matriz, las trompas de Falopio y los ovarios. <br><strong>La vagina:</strong> Es un canal elástico y con pliegues que permiten su dilatación en el momento del
@@ -82,13 +85,7 @@
       <div id="masculino">
         <h2>Aparato Reproductor Masculino</h2>
         <h3>Las partes del aparato genital masculino son:</h3>
-        <ul>
-          <li>Dos testículos</li>
-          <li>Dos canales deferentes</li>
-          <li>Dos vesículas seminales</li>
-          <li>La próstata</li>
-          <li>El pene</li>
-        </ul>
+
         <div class="partes">
           <div class="texto">
             <p>Los <strong>testículos</strong> o son dos glándulas que están ubicadas debajo del pene, entre los dos muslos. Son los encargados de producir los <strong>espermatozoides</strong>, que son las células reproductoras masculinas, y constan de una
@@ -97,8 +94,8 @@
               que es una sustancia viscosa y blanca que sale al exterior durante la eyaculación. Su función es la de mantener vivos y móviles a los espermatozoides. Cerca de la vesícula seminal está la <strong>próstata</strong>, que segrega unas sustancias
               nutritivas para los espermatozoides que pasan a la vesícula seminal.</p>
           </div>
-          <div class="imgen">
-            <img src="assets/imagen3.jpg" alt="">
+          <div class="imagen">
+            <img src="assets/aparatomasc.png" alt="">
           </div>
         </div>
       </div>
@@ -115,8 +112,8 @@
               <li>El óvulo fertilizado descenderá por la trompa de Falopio hacia el útero. Es en el útero donde se desarrollará todo el proceso de embarazo.</li>
             </ul>
           </div>
-          <div class="imgen">
-            <img src="assets/imagen1.jpg" alt="">
+          <div class="imagen">
+            <img src="assets/aparatofem.png" alt="">
           </div>
         </div>
       </div>
@@ -145,8 +142,19 @@
 
       <section class="seccion3">
         <h3>yoDecido</h3>
-        <section >
-          <img src="assets/tenerlo.png" href="">
+
+        <section id="iconos" class="container">
+          <div id="contenedorIconos">
+            <img class="icono" src="assets/abortar.png" href="">
+            <img class="icono" alt=""src="assets/adopcion.png" href="">
+            <img class="icono" src="assets/tenerlo.png" href="">
+          </div>
+        </section>
+
+        <section class="alternativas">
+
+          
+
           <p>Existen varias organizaciones sin costo que pueden ayudarte en el proceso de tener tu bebé de la forma más digna. Una de ellas es Vifac que sin ningún costo alberga mujeres en estado de vulnerabilidad durante el embarazo.</p>
           <p id="pregunta-1">¿Cuándo debo pedir cita con el médico?</p>
           <p id="respuesta-1">Inmediatamente sepas que estás embarazada, podrías hacer la cita con tu ginecólogo. De esta forma se podrá monitorear el embarazo de la forma más segura.</p>
@@ -176,8 +184,8 @@
             Sentirse emocional, olvidadiza o incapaz de concentrarse. Estos síntomas pueden ser por causa de la fatiga, de las hormonas del embarazo y de las emociones que trae consigo el estar embarazada.
           </p>
         </section>
-        <section>
-          <img src="assets/adopcion.png" href="">
+
+        <section class="alternativas">
           <p id="pregunta">¿Dar en adopción es lo indicado para mí?</p>
           <p id="res">Cada uno tiene sus razones únicas y válidas para decidir dar en adopción.
 
@@ -220,11 +228,8 @@
           </p>
           <p>Si no deseas tener a ese bebé, recuerda que hay muchas parejas estériles que desean tener hijos. Si inmediatamente después del nacimiento de tu hijo, lo das en adopción… te liberarás de un compromiso que no deseas, y harás inmensamente feliz a otras personas.</p>
         </section>
-          <section id="aborto">
-            <div id="abortarImg">
-              <img src="assets/abortar.png" href="">
-            </div>
-          <section id="abortarPreg">
+
+        <section class="alternativas">
             <p id="pregunta1">¿Qué es el aborto?</p>
             <p id="respuesta1">
               El aborto es la terminación del embarazo antes de que el producto esté capacitado para vivir fuera del útero. Puede darse de forma espontánea o puede darse de manera inducida.</p>
@@ -253,10 +258,9 @@
             <p id="respuesta8"> en unos días podrás hacer vida normal. Antes de salir de la clínica te darán cita para quince días aproximadamente. Esta cita sirve para comprobar mediante una ecografía, que todo está correcto.</p>
             <p id="pregunta9">Si aborto, ¿puedo embarazarme después?</p>
             <p id="respuesta9">Se ha comprobado a través de varios estudios que un aborto inducido de forma segura no daña ni altera la capacidad reproductiva de la mujer en ningún sentido,</p>
+          </sectzion>
           </section>
-          </section>
-        </section>
-      </section>
+
       <section class="seccion4">
     <section>
 		<h2 align="center">¡Yo te cuento!</h2>

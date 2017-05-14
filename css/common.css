@@ -60,8 +60,8 @@
 
 .seccion1 {
   margin-top: 5%;
-  background-color: #f25e36;
-  color: #FFF;
+  background-color: #fff;
+  color: #f25e36;
 }
 
 .botones {
@@ -86,28 +86,40 @@ transition: transform ease .3s;
 
 .seccion1 h1, h2 {
   display: flex;
+  padding:2%;
   justify-content: center;
   font-family: "free";
+  font-size: 3vw;
   cursor: pointer;
-transition: transform ease .3s;
+  transition: transform ease .3s;
 }
 .seccion1 h1:hover,h2:hover{
   transform: scale(1.2);
 }
 
+.seccion1 p{
+  width:100%;
+  padding:2%;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  background: #80A3A2;
+  color:#fff;
+}
 .seccion1, .seccion2, .seccion3, .seccion4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  padding:2%;
   width: 100%;
   align-items: center;
 }
 
 .seccion1 h3 {
   display: flex;
+  padding:2%;
   justify-content: center;
   font-family: "free";
+  font-size: 2vw;
 }
 
 .partes {
@@ -115,31 +127,89 @@ transition: transform ease .3s;
   justify-content: center;
   flex-direction: row;
   width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
 
 .imagen {
-  display: inline-flex;
+  /*display: inline-flex;*/
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
+
 .imagen img{
-  display: inline-flex;
-  width: 100%;
+  /*display: inline-flex;*/
+  width: 50%;
   margin: 1%;
+  justify-content: center;
+  align-content: center;
 }
 
 .texto {
-  display: inline-flex;
+  /*display: inline-flex;*/
   width: 50%;
   margin: 1%;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
 }
+.texto ul{
+  list-style: none;
+  padding: 2%;
+  background:  #80A3A2;
+  color:#fff;
+  width:100%;
+}
+.seccion3{
+  background: #80A3A2;
+
+}
+.seccion3 h3{
+  font-family: "free";
+  font-size: 6vw;
+  color:#f25e36;
+  padding:2%;
+}
+.container{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.alternativas{
+  width:80%;
+  background: #fff;
+  color:#56074B;
+  padding:2%;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+#iconos{
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background: #80A3A2;
+}
+#contenedorIconos{
+  width:100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.icono{
+  width:26.6%;
+  padding: 1%;
+}
+
 #femenino{
   display: none;
 }
 #masculino{
   display: none;
 }
+
 #fecundacion{
   display: none;
 }
