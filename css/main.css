@@ -14,3 +14,7 @@ a{
     font-family: "free";
     src: url("tipografia/orangejuice.ttf");
 }
+
+.carrusel {
+  width: 100%;
+}
