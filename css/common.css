@@ -4,12 +4,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
 }
 
 .encabezado {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  flex-direction: row;
   background-color: red;
   position: fixed;
   top: 1%;
@@ -17,11 +19,22 @@
 
 .encabezado nav {
   display: flex;
-  width: 50%;
+  width: 35%;
   justify-content: space-around;
-  background-color: pink;
   padding: 1%;
-  margin: 1%;
+  }
+.logo{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+}
+.logo img{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 20%;
+  height: 100%;
 }
 
 .encabezado nav a {
@@ -35,8 +48,8 @@
 }
 .iconosNav img{
   display: block;
-  width: 100%;
-  height: 80%;
+  width: 125%;
+  height: 49%;
 }
 
 .seccion1 {
@@ -53,10 +66,9 @@
 
 .botones img {
   display: flex;
-  width: 20%;
-  border: 2px solid;
-  border-color: red;
-  margin: 2%;
+  width: 25%;
+  height: 100%;
+
 }
 
 .seccion1 h1, h2 {
@@ -70,6 +82,7 @@
   justify-content: center;
   align-content: center;
   width: 90%;
+  align-items: center;
 }
 
 .seccion1 h3 {
@@ -113,10 +126,11 @@
 #pop{
 display: inline-flex;
 justify-content: space-between;
-width: 100%;
+flex-wrap: wrap;
+width: 70%;
 }
 #pop>img{
   display: flex;
-  flex-wrap: wrap;
-  width: 5%;
+  width: 30%;
+  height: 20%;
 }
