@@ -58,7 +58,7 @@ adopcion.addEventListener('click',function () {
   } else {
     adopcionSec.style.display = "block";
     abortarSec.style.display = "none";
-    atenerloSec.style.display = "none";
+    tenerloSec.style.display = "none";
   }
 });
 tenerlo.addEventListener('click',function () {
@@ -157,6 +157,94 @@ pregunta9.addEventListener('click', function() {
     respuesta9.style.display = 'block';
   } else {
     respuesta9.style.display = 'none';
+  }
+});
+var pregunta_2 = document.getElementById('pregunta-2');
+var pregunta_1 = document.getElementById('pregunta-1');
+var pregunta_3 = document.getElementById('pregunta-3');
+var pregunta_4 = document.getElementById('pregunta-4');
+var pregunta_5 = document.getElementById('pregunta-5');
+var pregunta_6 = document.getElementById('pregunta-6');
+var pregunta_7 = document.getElementById('pregunta-7');
+var pregunta_8 = document.getElementById('pregunta-8');
+var pregunta_9 = document.getElementById('pregunta-9');
+var respuesta_1 = document.getElementById('respuesta-1');
+var respuesta_2 = document.getElementById('respuesta-2');
+var respuesta_3 = document.getElementById('respuesta-3');
+var respuesta_4 = document.getElementById('respuesta-4');
+var respuesta_5 = document.getElementById('respuesta-5');
+var respuesta_6 = document.getElementById('respuesta-6');
+var respuesta_7 = document.getElementById('respuesta-7');
+var respuesta_8 = document.getElementById('respuesta-8');
+var respuesta_9 = document.getElementById('respuesta-9');
+pregunta_1.addEventListener('click', function() {
+  if (respuesta_1.style.display == 'none') {
+    respuesta_1.style.display = 'block';
+  } else {
+    respuesta_1.style.display = 'none';
+  }
+});
+
+pregunta_2.addEventListener('click', function() {
+  if (respuesta_2.style.display == 'none') {
+    respuesta_2.style.display = 'block';
+  } else {
+    respuesta_2.style.display = 'none';
+  }
+});
+
+pregunta_3.addEventListener('click', function() {
+  if (respuesta_3.style.display == 'none') {
+    respuesta_3.style.display = 'block';
+  } else {
+    respuesta_3.style.display = 'none';
+  }
+});
+
+pregunta_4.addEventListener('click', function() {
+  if (respuesta_4.style.display == 'none') {
+    respuesta_4.style.display = 'block';
+  } else {
+    respuesta_4.style.display = 'none';
+  }
+});
+
+pregunta_5.addEventListener('click', function() {
+  if (respuesta_5.style.display == 'none') {
+    respuesta_5.style.display = 'block';
+  } else {
+    respuesta_5.style.display = 'none';
+  }
+});
+
+pregunta_6.addEventListener('click', function() {
+  if (respuesta_6.style.display == 'none') {
+    respuesta_6.style.display = 'block';
+  } else {
+    respuesta_6.style.display = 'none';
+  }
+});
+
+pregunta_7.addEventListener('click', function() {
+  if (respuesta_7.style.display == 'none') {
+    respuesta_7.style.display = 'block';
+  } else {
+    respuesta_7.style.display = 'none';
+  }
+});
+
+pregunta_8.addEventListener('click', function() {
+  if (respuesta_8.style.display == 'none') {
+    respuesta_8.style.display = 'block';
+  } else {
+    respuesta_8.style.display = 'none';
+  }
+});
+pregunta_9.addEventListener('click', function() {
+  if (respuesta_9.style.display == 'none') {
+    respuesta_9.style.display = 'block';
+  } else {
+    respuesta_9.style.display = 'none';
   }
 });
 // //slider

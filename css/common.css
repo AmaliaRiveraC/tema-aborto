@@ -256,6 +256,18 @@ transition: transform ease .3s;
 #abortarSec, #tenerloSec, #adopcionSec{
   display: none;
 }
+#pregunta1, #pregunta2, #pregunta3, #pregunta4, #pregunta5, #pregunta6, #pregunta7, #pregunta8, #pregunta9{
+  cursor: pointer;
+  transition: transform ease .3s;
+}
+
 #respuesta1, #respuesta2, #respuesta3, #respuesta4, #respuesta5, #respuesta6, #respuesta7, #respuesta8, #respuesta9{
+  display: none;
+}
+#pregunta-1, #pregunta-2, #pregunta-3, #pregunta-4, #pregunta-5, #pregunta-6, #pregunta-7, #pregunta-8, #pregunta-9{
+  cursor: pointer;
+  transition: transform ease .3s;
+}
+#respuesta-1, #respuesta-2, #respuesta-3, #respuesta-4, #respuesta-5, #respuesta-6, #respuesta-7, #respuesta-8, #respuesta-9{
   display: none;
 }
