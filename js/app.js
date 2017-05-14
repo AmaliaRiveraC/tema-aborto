@@ -37,25 +37,39 @@ imagen3.addEventListener('click', function() {
 });
 
 //funcionalidad seccion2
-var abortarImg = document.getElementById('abortarImg');
-var abortarPreg = document.getElementById('abortarPreg');
-abortarImg.addEventListener('click', function() {
-  if (abortarPreg.style.display == "block") {
-    abortarPreg.style.display = "none";
+var abortar = document.getElementById('abortar');
+var adopcion = document.getElementById('adopcion');
+var tenerlo = document.getElementById('tenerlo');
+var abortarSec = document.getElementById('abortarSec');
+var adopcionSec = document.getElementById('adopcionSec');
+var tenerloSec = document.getElementById('tenerloSec');
+abortar.addEventListener('click',function () {
+  if (abortarSec.style.display == "block") {
+    abortarSec.style.display = "none";
   } else {
-    abortarPreg.style.display = "block";
-  };
+    abortarSec.style.display = "block";
+    tenerloSec.style.display = "none";
+    adopcionSec.style.display = "none";
+  }
 });
-var tenerloImg = document.getElementById('tenerloImg');
-var tenerloPreg = document.getElementById('tenerloPreg');
-abortarImg.addEventListener('click', function() {
-  if (tenerloPreg.style.display == "block") {
-    tenerloPreg.style.display = "none";
+adopcion.addEventListener('click',function () {
+  if (adopcionSec.style.display == "block") {
+    adopcionSec.style.display = "none";
   } else {
-    tenerloPreg.style.display = "block";
-  };
+    adopcionSec.style.display = "block";
+    abortarSec.style.display = "none";
+    atenerloSec.style.display = "none";
+  }
 });
-
+tenerlo.addEventListener('click',function () {
+  if (tenerloSec.style.display == "block") {
+    tenerloSec.style.display = "none";
+  } else {
+    tenerloSec.style.display = "block";
+    adopcionSec.style.display = "none";
+    abortarSec.style.display = "none";
+  }
+});
 
 var pregunta1 = document.getElementById('pregunta1');
 var pregunta2 = document.getElementById('pregunta2');
@@ -145,44 +159,44 @@ pregunta9.addEventListener('click', function() {
     respuesta9.style.display = 'none';
   }
 });
-//slider
-//intervalo tiempo cambio img slide, 5 segundos, se llama a la función "avanzaSlide()"
-setInterval('avanzaSlide()', 3000);
-
-//array con las clases para las diferentes imagenes
-var arrayImagenes = new Array(".img1", ".img2", ".img3");
-var div = new Array(".carrucel");
-console.log(div);
-
-//variable que nos permitirá saber qué imagen se está mostrando
-var contador = 0;
-
-//hace un efecto fadeIn para mostrar una imagen
-function mostrar(gif) {
-  $(gif).ready(function() {
-    $(arrayImagenes[contador]).fadeIn(1000);
-  });
-}
-
-//hace un efecto fadeOut para ocultar una imagen
-function ocultar(gif) {
-  $(gif).ready(function() {
-    $(arrayImagenes[contador]).fadeOut(1000);
-
-  });
-}
-
-//función principal
-function avanzaSlide() {
-
-  //se oculta la imagen actual
-  ocultar(arrayImagenes[contador]);
-  //aumentamos el contador en una unidad
-  contador = (contador + 1) % 3;
-  //mostramos la nueva imagen
-  mostrar(arrayImagenes[contador]);
-
-}
+// //slider
+// //intervalo tiempo cambio img slide, 5 segundos, se llama a la función "avanzaSlide()"
+// setInterval('avanzaSlide()', 3000);
+//
+// //array con las clases para las diferentes imagenes
+// var arrayImagenes = new Array(".img1", ".img2", ".img3");
+// var div = new Array(".carrucel");
+// console.log(div);
+//
+// //variable que nos permitirá saber qué imagen se está mostrando
+// var contador = 0;
+//
+// //hace un efecto fadeIn para mostrar una imagen
+// function mostrar(gif) {
+//   $(gif).ready(function() {
+//     $(arrayImagenes[contador]).fadeIn(1000);
+//   });
+// }
+//
+// //hace un efecto fadeOut para ocultar una imagen
+// function ocultar(gif) {
+//   $(gif).ready(function() {
+//     $(arrayImagenes[contador]).fadeOut(1000);
+//
+//   });
+// }
+//
+// //función principal
+// function avanzaSlide() {
+//
+//   //se oculta la imagen actual
+//   ocultar(arrayImagenes[contador]);
+//   //aumentamos el contador en una unidad
+//   contador = (contador + 1) % 3;
+//   //mostramos la nueva imagen
+//   mostrar(arrayImagenes[contador]);
+//
+// }
 
 
 
