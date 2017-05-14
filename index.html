@@ -146,7 +146,11 @@
             <img class="icono" src="assets/abortar.png" href="">
             <img class="icono" alt=""src="assets/adopcion.png" href="">
             <img class="icono" src="assets/tenerlo.png" href="">
+        
+            <img id="barra" class="icono" src="assets/barra.png">
+          
           </div>
+          
         </section>
 
         <section class="alternativas">
@@ -258,25 +262,21 @@
             <p id="respuesta9">Se ha comprobado a través de varios estudios que un aborto inducido de forma segura no daña ni altera la capacidad reproductiva de la mujer en ningún sentido,</p>
           </sectzion>
           </section>
-
+      </section>
       <section class="seccion4">
     <section>
 		<h2 align="center">¡Yo te cuento!</h2>
-	</section>
-
-	<h3>Comentari</h3>
-
-
+	</section>	
+	
 			<ul>
 				<li type="none"  id="comentariosPublicados">
 					<div name="comentariosPublicados" id="nuevosComentarios" style="border: 1px color: black"><hr width="800"  align="left"></div>
-
+				
 				</li>
-
+			
 			</ul>
-
+		
 	<form>
-		<h3>Comentar</h3>
 		<input type="button" value="Texto Grande" onclick="letraGrande()">
 		<input type="button" value="Texto Mediano" onclick="letraMediana()">
 		<input type="button" value="Texto Chico" onclick="letraChica();">
@@ -286,23 +286,20 @@
 		<input type="button" value="Centrar" onclick="centrar()">
 		<input type="button" value="Alinear Derecha" onclick="alinearDerecha()">
 		<div>
-
+			
 			<textarea name="ingresarComentario" id="ingresarComentario" placeholder="Escribe aquí tu artículo" value="comentario" oninput="duplicar()" style="width: 787px; height: 150px"></textarea>
 		</div>
 	</form>
 	<div>
-		<h3>Cómo se ve tu comentario</h3>
+		<h3>Cómo se ve tu artículo</h3>
 
 		<p name="comentarioEnTiempoReal" id="comentarioEnTiempoReal"> </p>
 		<hr>
 		<input type="submit" value="Enviar" onclick="publicarComentario();">
 	</div>
-    <footer>
-
-    </footer>
   </section>
-  <script src="js/app.js" charset="utf-8"></script>
-
+  <!--<script src="js/app.js" charset="utf-8"></script>-->
+  <script src="js/libro-visitas.js"></script>
 </body>
 
 </html>

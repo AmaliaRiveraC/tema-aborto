@@ -58,7 +58,6 @@
 /* Seccion Mi cuerpo*/
 
 .seccion1 {
-  margin-top: 5%;
   background-color: #fff;
   color: #f25e36;
 }
@@ -108,9 +107,10 @@ transition: transform ease .3s;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding:2%;
   width: 100%;
   align-items: center;
+  padding-bottom: 2%;
+  margin-top: 0;
 }
 
 .seccion1 h3 {
@@ -166,13 +166,12 @@ transition: transform ease .3s;
 }
 .seccion3{
   background: #80A3A2;
-
+  padding-bottom: 5%;
 }
 .seccion3 h3{
   font-family: "free";
-  font-size: 6vw;
+  font-size: 5vw;
   color:#f25e36;
-  padding:2%;
 }
 .container{
   display: flex;
@@ -186,10 +185,16 @@ transition: transform ease .3s;
   padding:2%;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
+
+#barra {
+  width: 13%;
+  float: right;
+}
 #iconos{
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  width: 100%;
   background: #80A3A2;
 }
 #contenedorIconos{
@@ -198,7 +203,7 @@ transition: transform ease .3s;
   flex-wrap: wrap;
 }
 .icono{
-  width:26.6%;
+  width:25%;
   padding: 1%;
 }
 
