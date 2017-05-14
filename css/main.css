@@ -3,8 +3,12 @@
 /*Seccion3 o Alternativas*/
 body{
   margin: 0;
-  padding: 1%;
+
 }
 a{
   text-decoration: none;
+}
+@font-face {
+    font-family: "free";
+    src: url("tipografia/orangejuice.ttf");
 }
