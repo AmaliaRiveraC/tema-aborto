@@ -37,25 +37,40 @@ imagen3.addEventListener('click', function() {
 });
 
 //funcionalidad seccion2
-var abortarImg = document.getElementById('abortarImg');
-var abortarPreg = document.getElementById('abortarPreg');
-abortarImg.addEventListener('click', function() {
-  if (abortarPreg.style.display == "block") {
-    abortarPreg.style.display = "none";
+var abortar = document.getElementById('abortar');
+var adopcion = document.getElementById('adopcion');
+var tenerlo = document.getElementById('tenerlo');
+var abortarSec = document.getElementById('abortarSec');
+var adopcionSec = document.getElementById('adopcionSec');
+var tenerloSec = document.getElementById('tenerloSec');
+abortar.addEventListener('click',function () {
+  if (abortarSec.style.display == "block") {
+    abortarSec.style.display = "none";
   } else {
-    abortarPreg.style.display = "block";
-  }
-});
-var tenerloImg = document.getElementById('tenerloImg');
-var tenerloPreg = document.getElementById('tenerloPreg');
-abortarImg.addEventListener('click', function() {
-  if (tenerloPreg.style.display == "block") {
-    tenerloPreg.style.display = "none";
-  } else {
-    tenerloPreg.style.display = "block";
-  }
-});
 
+    abortarSec.style.display = "block";
+    tenerloSec.style.display = "none";
+    adopcionSec.style.display = "none";
+  }
+});
+adopcion.addEventListener('click',function () {
+  if (adopcionSec.style.display == "block") {
+    adopcionSec.style.display = "none";
+  } else {
+    adopcionSec.style.display = "block";
+    abortarSec.style.display = "none";
+    tenerloSec.style.display = "none";
+  }
+});
+tenerlo.addEventListener('click',function () {
+  if (tenerloSec.style.display == "block") {
+    tenerloSec.style.display = "none";
+  } else {
+    tenerloSec.style.display = "block";
+    adopcionSec.style.display = "none";
+    abortarSec.style.display = "none";
+  }
+});
 
 var pregunta1 = document.getElementById('pregunta1');
 var pregunta2 = document.getElementById('pregunta2');
@@ -145,5 +160,3 @@ pregunta9.addEventListener('click', function() {
     respuesta9.style.display = 'none';
   }
 });
-
-
