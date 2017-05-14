@@ -1,50 +1,61 @@
 //funcionalidad  seccion1
 var femenino = document.getElementById('femenino');
-var masculino = document. getElementById('masculino');
+var masculino = document.getElementById('masculino');
 var fecundacion = document.getElementById('fecundacion');
 var imagen1 = document.getElementById('imagen1');
 var imagen2 = document.getElementById('imagen2');
 var imagen3 = document.getElementById('imagen3');
 
 
-imagen1.addEventListener('click',function () {
-  if(femenino.style.display == "block") {
-    femenino.style.display="none";
+imagen1.addEventListener('click', function() {
+  if (femenino.style.display == "block") {
+    femenino.style.display = "none";
   } else {
     femenino.style.display = "block";
   }
 });
 
-imagen2.addEventListener('click',function () {
-  if(masculino.style.display == "block") {
-    masculino.style.display="none";
-    } else {
-      masculino.style.display = "block";
-    }
-  femenino.style.display="none";
-  fecundacion.style.display="none"
+imagen2.addEventListener('click', function() {
+  if (masculino.style.display == "block") {
+    masculino.style.display = "none";
+  } else {
+    masculino.style.display = "block";
+  }
+  femenino.style.display = "none";
+  fecundacion.style.display = "none"
 });
 
-imagen3.addEventListener('click',function () {
-  if(fecundacion.style.display == "block") {
-    fecundacion.style.display="none";
-    } else {
-      fecundacion.style.display = "block";
-    }
-  masculino.style.display="none";
-  femenino.style.display="none";
+imagen3.addEventListener('click', function() {
+  if (fecundacion.style.display == "block") {
+    fecundacion.style.display = "none";
+  } else {
+    fecundacion.style.display = "block";
+    masculino.style.display = "none";
+    femenino.style.display = "none";
+  }
+
 });
 
 //funcionalidad seccion2
 var abortarImg = document.getElementById('abortarImg');
 var abortarPreg = document.getElementById('abortarPreg');
-abortarImg.addEventListener('click',function () {
-  if(abortarPreg.style.display == "block"){
+abortarImg.addEventListener('click', function() {
+  if (abortarPreg.style.display == "block") {
     abortarPreg.style.display = "none";
-  }else{
+  } else {
     abortarPreg.style.display = "block";
   };
 });
+var tenerloImg = document.getElementById('tenerloImg');
+var tenerloPreg = document.getElementById('tenerloPreg');
+abortarImg.addEventListener('click', function() {
+  if (tenerloPreg.style.display == "block") {
+    tenerloPreg.style.display = "none";
+  } else {
+    tenerloPreg.style.display = "block";
+  };
+});
+
 
 var pregunta1 = document.getElementById('pregunta1');
 var pregunta2 = document.getElementById('pregunta2');
@@ -64,76 +75,116 @@ var respuesta6 = document.getElementById('respuesta6');
 var respuesta7 = document.getElementById('respuesta7');
 var respuesta8 = document.getElementById('respuesta8');
 var respuesta9 = document.getElementById('respuesta9');
-pregunta1.addEventListener('click',function() {
-if(respuesta1.style.display =='none'){
-  respuesta1.style.display = 'block';
-}else{
-  respuesta1.style.display = 'none';
-}
+pregunta1.addEventListener('click', function() {
+  if (respuesta1.style.display == 'none') {
+    respuesta1.style.display = 'block';
+  } else {
+    respuesta1.style.display = 'none';
+  }
 });
 
-pregunta2.addEventListener('click',function() {
-if(respuesta2.style.display =='none'){
-  respuesta2.style.display = 'block';
-}else{
-  respuesta2.style.display = 'none';
-}
+pregunta2.addEventListener('click', function() {
+  if (respuesta2.style.display == 'none') {
+    respuesta2.style.display = 'block';
+  } else {
+    respuesta2.style.display = 'none';
+  }
 });
 
-pregunta3.addEventListener('click',function() {
-if(respuesta3.style.display =='none'){
-  respuesta3.style.display = 'block';
-}else{
-  respuesta3.style.display = 'none';
-}
+pregunta3.addEventListener('click', function() {
+  if (respuesta3.style.display == 'none') {
+    respuesta3.style.display = 'block';
+  } else {
+    respuesta3.style.display = 'none';
+  }
 });
 
-pregunta4.addEventListener('click',function() {
-if(respuesta4.style.display =='none'){
-  respuesta4.style.display = 'block';
-}else{
-  respuesta4.style.display = 'none';
-}
+pregunta4.addEventListener('click', function() {
+  if (respuesta4.style.display == 'none') {
+    respuesta4.style.display = 'block';
+  } else {
+    respuesta4.style.display = 'none';
+  }
 });
 
-pregunta5.addEventListener('click',function() {
-if(respuesta5.style.display =='none'){
-  respuesta5.style.display = 'block';
-}else{
-  respuesta5.style.display = 'none';
-}
+pregunta5.addEventListener('click', function() {
+  if (respuesta5.style.display == 'none') {
+    respuesta5.style.display = 'block';
+  } else {
+    respuesta5.style.display = 'none';
+  }
 });
 
-pregunta6.addEventListener('click',function() {
-if(respuesta6.style.display =='none'){
-  respuesta6.style.display = 'block';
-}else{
-  respuesta6.style.display = 'none';
-}
+pregunta6.addEventListener('click', function() {
+  if (respuesta6.style.display == 'none') {
+    respuesta6.style.display = 'block';
+  } else {
+    respuesta6.style.display = 'none';
+  }
 });
 
-pregunta7.addEventListener('click',function() {
-if(respuesta7.style.display =='none'){
-  respuesta7.style.display = 'block';
-}else{
-  respuesta7.style.display = 'none';
-}
+pregunta7.addEventListener('click', function() {
+  if (respuesta7.style.display == 'none') {
+    respuesta7.style.display = 'block';
+  } else {
+    respuesta7.style.display = 'none';
+  }
 });
 
-pregunta8.addEventListener('click',function() {
-if(respuesta8.style.display =='none'){
-  respuesta8.style.display = 'block';
-}else{
-  respuesta8.style.display = 'none';
-}
+pregunta8.addEventListener('click', function() {
+  if (respuesta8.style.display == 'none') {
+    respuesta8.style.display = 'block';
+  } else {
+    respuesta8.style.display = 'none';
+  }
 });
-pregunta9.addEventListener('click',function() {
-if(respuesta9.style.display =='none'){
-  respuesta9.style.display = 'block';
-}else{
-  respuesta9.style.display = 'none';
-}
+pregunta9.addEventListener('click', function() {
+  if (respuesta9.style.display == 'none') {
+    respuesta9.style.display = 'block';
+  } else {
+    respuesta9.style.display = 'none';
+  }
 });
+//slider
+//intervalo tiempo cambio img slide, 5 segundos, se llama a la función "avanzaSlide()"
+setInterval('avanzaSlide()', 3000);
+
+//array con las clases para las diferentes imagenes
+var arrayImagenes = new Array(".img1", ".img2", ".img3");
+var div = new Array(".carrucel");
+console.log(div);
+
+//variable que nos permitirá saber qué imagen se está mostrando
+var contador = 0;
+
+//hace un efecto fadeIn para mostrar una imagen
+function mostrar(gif) {
+  $(gif).ready(function() {
+    $(arrayImagenes[contador]).fadeIn(1000);
+  });
+}
+
+//hace un efecto fadeOut para ocultar una imagen
+function ocultar(gif) {
+  $(gif).ready(function() {
+    $(arrayImagenes[contador]).fadeOut(1000);
+
+  });
+}
+
+//función principal
+function avanzaSlide() {
+
+  //se oculta la imagen actual
+  ocultar(arrayImagenes[contador]);
+  //aumentamos el contador en una unidad
+  contador = (contador + 1) % 3;
+  //mostramos la nueva imagen
+  mostrar(arrayImagenes[contador]);
+
+}
+
+
 
 
 /* Seccion comentarios*/
@@ -142,62 +193,61 @@ var comentarioEnTiempoReal = document.getElementById("comentarioEnTiempoReal");
 
 function duplicar() {
 
-comentarioEnTiempoReal.innerHTML = ingresarComentario.value;
+  comentarioEnTiempoReal.innerHTML = ingresarComentario.value;
 
 }
 
 function publicarComentario() {
-	//Se comienza guardando el valor que el usurio ingrese en comentarioEnTiempoReal, clonando todos sus atributos, para así poderlo publicar d emanera identica.
+  //Se comienza guardando el valor que el usurio ingrese en comentarioEnTiempoReal, clonando todos sus atributos, para así poderlo publicar d emanera identica.
 
-	var comentarioPublicado = comentarioEnTiempoReal.cloneNode(true);
+  var comentarioPublicado = comentarioEnTiempoReal.cloneNode(true);
 
-	var nuevosComentarios = document.getElementById("comentariosPublicados");
+  var nuevosComentarios = document.getElementById("comentariosPublicados");
 
-	nuevosComentarios.insertBefore(comentarioPublicado, nuevosComentarios.firstChild);
+  nuevosComentarios.insertBefore(comentarioPublicado, nuevosComentarios.firstChild);
 
-	var lineaSeparadora = document.createElement("hr");
+  var lineaSeparadora = document.createElement("hr");
 
-	nuevosComentarios.insertBefore(lineaSeparadora, nuevosComentarios.firstChild);
-	comentarioEnTiempoReal.removeAttribute("style");
-	}
+  nuevosComentarios.insertBefore(lineaSeparadora, nuevosComentarios.firstChild);
+  comentarioEnTiempoReal.removeAttribute("style");
+}
 
-function letraChica(){
-	comentarioEnTiempoReal.style.fontSize = "20px";
+function letraChica() {
+  comentarioEnTiempoReal.style.fontSize = "20px";
 
 }
 
 function letraMediana() {
-	comentarioEnTiempoReal.style.fontSize = "40px";
+  comentarioEnTiempoReal.style.fontSize = "40px";
 }
 
-function letraGrande(){
-	comentarioEnTiempoReal.style.fontSize = "80px";
+function letraGrande() {
+  comentarioEnTiempoReal.style.fontSize = "80px";
 }
 
-function colorDeTexto(){
-	var eleccionUsuario = prompt("Ingresa el código hexadecimal del color de texto que desees:  ");
-	eleccionUsuario = "#" + eleccionUsuario;
-	comentarioEnTiempoReal.style.color = eleccionUsuario;
-	
+function colorDeTexto() {
+  var eleccionUsuario = prompt("Ingresa el código hexadecimal del color de texto que desees:  ");
+  eleccionUsuario = "#" + eleccionUsuario;
+  comentarioEnTiempoReal.style.color = eleccionUsuario;
+
 }
 
 function alinearIzquierda() {
-	comentarioEnTiempoReal.style.textAlign = "left";
+  comentarioEnTiempoReal.style.textAlign = "left";
 }
 
 function centrar() {
-	comentarioEnTiempoReal.style.textAlign = "center";
+  comentarioEnTiempoReal.style.textAlign = "center";
 }
 
 function alinearDerecha() {
-	comentarioEnTiempoReal.style.textAlign = "right";
+  comentarioEnTiempoReal.style.textAlign = "right";
 }
 
 
-function colorDeFondo(){
-	var eleccionUsuario = prompt("Ingresa el código hexadecimal del color de fondo que desees:  ");
-	eleccionUsuario = "#" + eleccionUsuario;
-	comentarioEnTiempoReal.style.backgroundColor = eleccionUsuario;
-	
-}
+function colorDeFondo() {
+  var eleccionUsuario = prompt("Ingresa el código hexadecimal del color de fondo que desees:  ");
+  eleccionUsuario = "#" + eleccionUsuario;
+  comentarioEnTiempoReal.style.backgroundColor = eleccionUsuario;
 
+}
