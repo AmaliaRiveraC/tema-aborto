@@ -47,6 +47,7 @@ abortar.addEventListener('click',function () {
   if (abortarSec.style.display == "block") {
     abortarSec.style.display = "none";
   } else {
+
     abortarSec.style.display = "block";
     tenerloSec.style.display = "none";
     adopcionSec.style.display = "none";
@@ -58,7 +59,7 @@ adopcion.addEventListener('click',function () {
   } else {
     adopcionSec.style.display = "block";
     abortarSec.style.display = "none";
-    atenerloSec.style.display = "none";
+    tenerloSec.style.display = "none";
   }
 });
 tenerlo.addEventListener('click',function () {
@@ -159,109 +160,3 @@ pregunta9.addEventListener('click', function() {
     respuesta9.style.display = 'none';
   }
 });
-// //slider
-// //intervalo tiempo cambio img slide, 5 segundos, se llama a la función "avanzaSlide()"
-// setInterval('avanzaSlide()', 3000);
-//
-// //array con las clases para las diferentes imagenes
-// var arrayImagenes = new Array(".img1", ".img2", ".img3");
-// var div = new Array(".carrucel");
-// console.log(div);
-//
-// //variable que nos permitirá saber qué imagen se está mostrando
-// var contador = 0;
-//
-// //hace un efecto fadeIn para mostrar una imagen
-// function mostrar(gif) {
-//   $(gif).ready(function() {
-//     $(arrayImagenes[contador]).fadeIn(1000);
-//   });
-// }
-//
-// //hace un efecto fadeOut para ocultar una imagen
-// function ocultar(gif) {
-//   $(gif).ready(function() {
-//     $(arrayImagenes[contador]).fadeOut(1000);
-//
-//   });
-// }
-//
-// //función principal
-// function avanzaSlide() {
-//
-//   //se oculta la imagen actual
-//   ocultar(arrayImagenes[contador]);
-//   //aumentamos el contador en una unidad
-//   contador = (contador + 1) % 3;
-//   //mostramos la nueva imagen
-//   mostrar(arrayImagenes[contador]);
-//
-// }
-
-
-
-
-/* Seccion comentarios*/
-var ingresarComentario = document.getElementById("ingresarComentario");
-var comentarioEnTiempoReal = document.getElementById("comentarioEnTiempoReal");
-
-function duplicar() {
-
-  comentarioEnTiempoReal.innerHTML = ingresarComentario.value;
-
-}
-
-function publicarComentario() {
-  //Se comienza guardando el valor que el usurio ingrese en comentarioEnTiempoReal, clonando todos sus atributos, para así poderlo publicar d emanera identica.
-
-  var comentarioPublicado = comentarioEnTiempoReal.cloneNode(true);
-
-  var nuevosComentarios = document.getElementById("comentariosPublicados");
-
-  nuevosComentarios.insertBefore(comentarioPublicado, nuevosComentarios.firstChild);
-
-  var lineaSeparadora = document.createElement("hr");
-
-  nuevosComentarios.insertBefore(lineaSeparadora, nuevosComentarios.firstChild);
-  comentarioEnTiempoReal.removeAttribute("style");
-}
-
-function letraChica() {
-  comentarioEnTiempoReal.style.fontSize = "20px";
-
-}
-
-function letraMediana() {
-  comentarioEnTiempoReal.style.fontSize = "40px";
-}
-
-function letraGrande() {
-  comentarioEnTiempoReal.style.fontSize = "80px";
-}
-
-function colorDeTexto() {
-  var eleccionUsuario = prompt("Ingresa el código hexadecimal del color de texto que desees:  ");
-  eleccionUsuario = "#" + eleccionUsuario;
-  comentarioEnTiempoReal.style.color = eleccionUsuario;
-
-}
-
-function alinearIzquierda() {
-  comentarioEnTiempoReal.style.textAlign = "left";
-}
-
-function centrar() {
-  comentarioEnTiempoReal.style.textAlign = "center";
-}
-
-function alinearDerecha() {
-  comentarioEnTiempoReal.style.textAlign = "right";
-}
-
-
-function colorDeFondo() {
-  var eleccionUsuario = prompt("Ingresa el código hexadecimal del color de fondo que desees:  ");
-  eleccionUsuario = "#" + eleccionUsuario;
-  comentarioEnTiempoReal.style.backgroundColor = eleccionUsuario;
-
-}
