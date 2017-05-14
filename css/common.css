@@ -17,8 +17,8 @@
 
 .encabezado nav {
   display: flex;
-  width: 40%;
-  justify-content: space-between;
+  width: 50%;
+  justify-content: space-around;
   background-color: pink;
   padding: 1%;
   margin: 1%;
@@ -27,6 +27,16 @@
 .encabezado nav a {
   display: flex;
   justify-content: space-between;
+}
+.encabezado .iconosNav{
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 15%;
+}
+.iconosNav img{
+  display: block;
+  width: 100%;
+  height: 80%;
 }
 
 .seccion1 {
@@ -79,7 +89,7 @@
   width: 50%;
 
 }
-img{
+.imagen img{
   display: inline-flex;
   width: 100%;
   margin: 1%;
@@ -91,13 +101,22 @@ img{
   margin: 1%;
   flex-direction: column;
 }
-.femenino{
+#femenino{
   display: none;
 }
-.masculino{
+#masculino{
   display: none;
 }
-.fecundacion{
+#fecundacion{
   display: none;
 }
-.
+#pop{
+display: inline-flex;
+justify-content: space-between;
+width: 100%;
+}
+#pop>img{
+  display: flex;
+  flex-wrap: wrap;
+  width: 5%;
+}
