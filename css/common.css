@@ -284,11 +284,11 @@ transition: transform ease .3s;
 }
 
 footer {
-  width: 100%;
+  width: 96%;
   display: flex;
   justify-content: center;
   background-color: #56074B;
   font-family: 'Ubuntu Condensed', sans-serif;
   color: #FFF;
-  padding: 3%;
+  padding: 2%;
 }
